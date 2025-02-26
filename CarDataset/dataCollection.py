@@ -63,8 +63,8 @@ def main():
     filterByYear = input("Filter by year: ")
     filteredYear = filteredModel[filteredModel['Year'] == int(filterByYear)]
 
-    X = filteredYear.iloc[:, [6]].values  # Select the correct column
-    y = filteredYear.iloc[:, -1].values
+    X = filteredYear.iloc[:, [6]].values  # Gathers the feature set
+    y = filteredYear.iloc[:, -1].values    # Gathers the target set
     
     # printReferenceTable(filteredYear['Mileage'], filteredYear['Price'], False, 'Mileage vs Price')
 
